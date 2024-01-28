@@ -12,6 +12,3 @@ wine <- read.csv("winequality-red.csv", sep=";")
 # Compute the model
 model <- lm(quality ~ ., data=wine)
 summary(model)
-
-
-

@@ -17,3 +17,11 @@ wine$quality.bin <- factor(wine$quality.bin)
 # Compute the model
 model <- glm(quality.bin ~ .-quality, data=wine, family=binomial)
 summary(model)
+
+# Construct a confusion matrix to evaluate fit
+probs <- predict(model, type = "response")
+pred <- rep("bad", 1599)
+pred[probs > 0.5] <- "good"
+confusuion <- table(pred, wine$quality.bin)
+
+
