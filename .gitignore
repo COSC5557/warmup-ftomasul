@@ -3,6 +3,6 @@
 .RData
 .Ruserdata
 .vscode/
-.odt
-.odt#
-.txt
+*.odt
+*.odt#
+*.txt
