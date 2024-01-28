@@ -1,5 +1,0 @@
-- data is delimited by ;
-
-## Sources ##
-
-Find a classification model to use: https://rstudio-pubs-static.s3.amazonaws.com/349547_0f2e13952bda439da6faee386190bc2c.html
