@@ -10,8 +10,7 @@ rm(list = ls())
 wine <- read.csv("winequality-red.csv", sep=";")
 
 # Compute the model
-model <- lm(quality ~ fixed.acidity + volatile.acidity + citric.acid + residual.sugar + chlorides + free.sulfur.dioxide + density + pH + sulphates + alcohol, data=wine)
-
+model <- lm(quality ~ ., data=wine)
 summary(model)
 
 
