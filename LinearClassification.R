@@ -25,3 +25,6 @@ pred[probs > 0.5] <- "good"
 confusuion <- table(pred, wine$quality.bin)
 
 
+
+
+
